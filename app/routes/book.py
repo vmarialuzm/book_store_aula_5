@@ -3,7 +3,7 @@ from app.forms import BookForm
 from app.models.book import Book
 from app.db import db 
 
-book_router = Blueprint("book_router", __name__)
+book_router = Blueprint("book_router",__name__)
 
 @book_router.route("/")
 def index():

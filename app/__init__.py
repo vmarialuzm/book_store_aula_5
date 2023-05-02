@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_bootstrap import Bootstrap
-from .config import Config
-from .routes.book import book_router
+from app.config import Config
+from app.routes.book import book_router
 
 def create_app():
     app = Flask(__name__)
@@ -10,4 +10,4 @@ def create_app():
 
     app.register_blueprint(book_router)
 
-    return 
+    return app
